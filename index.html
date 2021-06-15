@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <audio id="clicksound">
+        <source src="clicksound.wav" type="audio/wav">
+    </audio>
+    <audio id="winsound">
+        <source src="winsound.wav" type="audio/wav">
+    </audio>
+    <audio id="playsound">
+        <source src="playsound.wav" type="audio/wav">
+    </audio>
+    <audio id="backgroundsound">
+        <source src="backgroundmusic.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="HEAD"> 
+        <h1>TIC TAC TOE</h1>
+        <div class="turn" id="turn" data-turn></div>
+
+        <div class="main" id="main">
+            <div class="box" data-box id='0'></div>
+            <div class="box" data-box id='1'></div>
+            <div class="box" data-box id='2'></div>
+            <div class="box" data-box id='3'></div>
+            <div class="box" data-box id='4'></div>
+            <div class="box" data-box id='5'></div>
+            <div class="box" data-box id='6'></div>
+            <div class="box" data-box id='7'></div>
+            <div class="box" data-box id='8'></div>
+            <br><br>
+            <button id="back">BACK</button>
+            <br><br><br>
+            <div class="score" data-win id="scorewin"></div>
+            <div class="score" data-draw id="scoredraw"></div>
+            <div class="score" data-loose id="scoreloose"></div>
+        </div>
+    </div>    
+    <div class="result" id="result">
+            <div data-result></div>
+            <button id="restartb">RESTART</button>
+    </div>
+    <div class="choose" id="choose">
+        <h2><span class="mode">CHOOSE</span></h2>
+        <button id="single">SINGLE<br>PLAYER</button>
+        <button id="double">DOUBLE<br>PLAYER</button>
+    </div>
+    <div class="shape" id="shape">
+        <div data-shapechoose></div>
+        <button id="XorYes" data-xoryes></button>
+        <button id="OorNo" data-oorno></button>
+        <br><br>
+        <button id="back2">BACK</button>
+    </div>
+</body>
+</html>
